@@ -1,0 +1,21 @@
+[user]
+  name = "Niko Nevala"
+  email = "niko@nevala.fi"
+
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  br = branch
+  lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+  panic = !tar cvf ../git_panic.tar *
+  fix = commit --amend -C HEAD
+
+[color]
+  ui = true
+
+[push]
+  default = upstream
+
+[core]
+  excludesfile = ~/.dotfiles/conf/.gitignore_global
