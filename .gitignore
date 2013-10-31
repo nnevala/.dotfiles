@@ -1,4 +1,7 @@
+# Ignore everything...
 *
+
+# ...except:
 
 # This project
 !README.md
