@@ -1,7 +1,10 @@
 *
 
+# This project
 !README.md
-
 !.gitconfig
 !.gitignore
+
+# vim
+!.vimrc
 
