@@ -15,3 +15,9 @@
 !.vim/bundles
 !.vim/ignores
 
+# TTYtter
+!.ttytterrc
+!.ttytter/
+.ttytter/*
+!.ttytter/PrettyTweets.pl
+

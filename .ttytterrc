@@ -1,0 +1,9 @@
+readline=Term::ReadLine::TTYtter
+simplestart=1
+ansi=1
+ssl=1
+dostream=1
+slowpost=5
+exts=.ttytter/PrettyTweets.pl
+avatar=firefox %U&
+urlopen=firefox %U&
