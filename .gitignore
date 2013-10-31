@@ -13,4 +13,5 @@
 !.vim/
 .vim/*
 !.vim/bundles
+!.vim/ignores
 
