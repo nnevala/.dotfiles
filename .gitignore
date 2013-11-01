@@ -19,6 +19,7 @@
 
 # X
 !.Xresources
+!.xinitrc
 
 # vim
 !.vimrc
@@ -32,4 +33,12 @@
 !.ttytter/
 .ttytter/*
 !.ttytter/PrettyTweets.pl
+
+# Xmonad
+!.xmonad/
+.xmonad/*
+!.xmonad/xmonad.hs
+!.xmonad/xmobar.hs
+!.xmonad/bin/
+!.xmonad/bin/*
 
