@@ -6,5 +6,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/neocomplcache.vim'
 
 filetype plugin indent on

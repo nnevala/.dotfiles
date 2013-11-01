@@ -1,6 +1,11 @@
 source ~/.vim/ignores
 source ~/.vim/bundles
 
+let g:neocomplcache_enable_at_startup = 1
+
+set number
+set mouse=a
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
 "       Amir Salihefendic
