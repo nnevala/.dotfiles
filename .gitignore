@@ -13,6 +13,9 @@
 
 # Npm
 !.npmrc
+!.npm-packages/
+.npm-packages/*
+!.npm-packages/.keep
 
 # X
 !.Xresources
