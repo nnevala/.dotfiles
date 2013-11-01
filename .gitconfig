@@ -18,4 +18,4 @@
   default = upstream
 
 [core]
-  excludesfile = ~/.dotfiles/conf/.gitignore_global
+  excludesfile = ~/.gitignore_global

@@ -5,12 +5,15 @@
 
 # This project
 !README.md
-!.gitconfig
 !.gitignore
 
 # Config in general...
 !.config/
 .config/*
+
+# Git
+!.gitconfig
+!.gitignore_global
 
 # Bash
 !.bashrc
