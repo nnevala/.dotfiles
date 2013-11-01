@@ -8,6 +8,9 @@
 !.gitconfig
 !.gitignore
 
+# X
+!.Xresources
+
 # vim
 !.vimrc
 !.vim/
