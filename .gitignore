@@ -8,6 +8,10 @@
 !.gitconfig
 !.gitignore
 
+# Config in general...
+!.config/
+.config/*
+
 # Bash
 !.bashrc
 
@@ -20,6 +24,9 @@
 # X
 !.Xresources
 !.xinitrc
+!.Xcolorscheme
+!.config/Xcolorschemes/
+!.config/Xcolorschemes/*
 
 # vim
 !.vimrc
