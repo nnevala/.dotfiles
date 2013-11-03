@@ -24,6 +24,11 @@
 .npm-packages/*
 !.npm-packages/.keep
 
+# Go
+!go/
+.go/*
+!go/.keep
+
 # X
 !.Xresources
 !.xinitrc
