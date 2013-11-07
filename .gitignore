@@ -17,6 +17,7 @@
 
 # Bash
 !.bashrc
+!.bash_profile
 
 # Npm
 !.npmrc
