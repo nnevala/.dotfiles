@@ -156,32 +156,28 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 
   -- Mute volume.
-  , ((modMask .|. controlMask, xK_m),
+  , ((0, 0x1008ff12),
      spawn "amixer -q set Master toggle")
 
   -- Decrease volume.
-  , ((modMask .|. controlMask, xK_j),
-     spawn "amixer -q set Master 10%-")
+  , ((0, 0x1008ff11),
+     spawn "amixer -q set Master 5%-")
 
   -- Increase volume.
-  , ((modMask .|. controlMask, xK_k),
-     spawn "amixer -q set Master 10%+")
+  , ((0, 0x1008ff13),
+     spawn "amixer -q set Master 5%+")
 
   -- Audio previous.
   , ((0, 0x1008FF16),
-     spawn "")
+     spawn "cmus-remote --prev")
 
   -- Play/pause.
   , ((0, 0x1008FF14),
-     spawn "")
+     spawn "cmus-remote --pause")
 
   -- Audio next.
   , ((0, 0x1008FF17),
-     spawn "")
-
-  -- Eject CD tray.
-  , ((0, 0x1008FF2C),
-     spawn "eject -T")
+     spawn "cmus-remote --next")
 
   --------------------------------------------------------------------
   -- "Standard" xmonad key bindings
