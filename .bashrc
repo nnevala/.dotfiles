@@ -2,7 +2,7 @@
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
 # Cabal
-export PATH=$PATH:~/.cabal/bin
+export PATH=~/.cabal/bin:$PATH
 
 # Xmonad
 export PATH=$PATH:~/.xmonad/bin
@@ -24,4 +24,3 @@ export PATH=$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
 # Go
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
-
