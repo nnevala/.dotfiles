@@ -11,6 +11,10 @@
 !.config/
 .config/*
 
+# Helper scripts
+!bin/
+!bin/*
+
 # Git
 !.gitconfig
 !.gitignore_global

@@ -14,9 +14,10 @@ Config {
         Run BatteryP ["BAT0"] ["-t", "<left>% (<timeleft>)"] 600,
         Run DiskU [("/", "/ <free>,"), ("/home", "/home <free>")] [] 10,
         Run ThermalZone 0 ["-L", "500", "-H", "80", "-h", "#FFB6B0", "-l", "#CEFFAC", "-n", "#FFFFCC"] 30,
+        Run Com "show-volume" [] "volume" 10,
         Run StdinReader
     ],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader% }{ SSD: %disku%   %multicpu%   %memory%   Wifi: %wlp4s0wi% (%wlp4s0%)   Bat: %battery%   Temp: %thermal0%   Out: %EGLL%   <fc=#FFFFCC>%date%</fc>"
+    template = "%StdinReader% }{  Vol: %volume%   SSD: %disku%   %multicpu%   %memory%   Wifi: %wlp4s0wi% (%wlp4s0%)   Bat: %battery%   Temp: %thermal0%   Out: %EGLL%   <fc=#FFFFCC>%date%</fc>"
 }

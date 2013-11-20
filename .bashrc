@@ -1,6 +1,9 @@
 # SSH
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
+# scripts
+export PATH=$PATH:~/bin
+
 # Cabal
 export PATH=~/.cabal/bin:$PATH
 
