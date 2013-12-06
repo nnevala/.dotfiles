@@ -158,13 +158,19 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Mute volume.
   , ((0, 0x1008ff12),
      spawn "amixer -q set Master toggle")
+  , ((modMask, xK_0),
+     spawn "amixer -q set Master toggle")
 
   -- Decrease volume.
   , ((0, 0x1008ff11),
      spawn "amixer -q set Master on && amixer -q set Master 5%-")
+  , ((modMask, xK_minus),
+     spawn "amixer -q set Master on && amixer -q set Master 5%-")
 
   -- Increase volume.
   , ((0, 0x1008ff13),
+     spawn "amixer -q set Master on && amixer -q set Master 5%+")
+  , ((modMask, xK_equal),
      spawn "amixer -q set Master on && amixer -q set Master 5%+")
 
   -- Audio previous.
