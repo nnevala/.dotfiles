@@ -47,6 +47,9 @@
 .vim/*
 !.vim/bundles
 !.vim/ignores
+!.vim/bundle/
+.vim/bundle/*
+!.vim/bundle/vundle
 
 # TTYtter
 !.ttytterrc
