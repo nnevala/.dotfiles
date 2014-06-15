@@ -2,7 +2,7 @@
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
 # scripts
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/bin/xmobar-scripts
 
 # Cabal
 export PATH=~/.cabal/bin:$PATH

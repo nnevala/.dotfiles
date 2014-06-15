@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source virt_env/mozilla_dev/bin/activate
+python bin/dropbox.py $1 $2 $3 $4 $5
+

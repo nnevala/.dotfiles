@@ -33,7 +33,7 @@ myTerminal = "/usr/bin/xterm"
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1:term","2:web","3:code","4:vm","5:media"] ++ map show [6..9]
+myWorkspaces = ["1:comms","2:web","3:dev1","4:dev2","5:spotify","6:skype"] ++ map show [6..9]
 
 
 ------------------------------------------------------------------------

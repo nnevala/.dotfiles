@@ -2,8 +2,7 @@
 
 amixer get Master | grep off > /dev/null
 
-if test $? -eq 0
-then
+if [ $? -eq 0]; then
     echo "---"
 else
     amixer get Master | grep Mono: | awk '{ print substr($4, 2, length($4)-2) }'
