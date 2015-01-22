@@ -11,12 +11,15 @@ Config {
         Run Date "%a %b %_d %k:%M:%S" "date" 10,
         Run DiskU [("/", "[/ <free>]"), ("/home", "[/home <free>]")] [] 10,
         Run ThermalZone 0 ["-L", "500", "-H", "80", "-h", "#FFB6B0", "-l", "#CEFFAC", "-n", "#FFFFCC"] 30,
+        Run ThermalZone 1 ["-L", "500", "-H", "80", "-h", "#FFB6B0", "-l", "#CEFFAC", "-n", "#FFFFCC"] 30,
+        Run ThermalZone 2 ["-L", "500", "-H", "80", "-h", "#FFB6B0", "-l", "#CEFFAC", "-n", "#FFFFCC"] 30,
         Run Com "volume" [] "vol" 10,
-        Run Com "fan-speed" ["fan1"] "fan" 10,
+        Run Com "fan-speed" ["fan1"] "pump" 10,
+        Run Com "fan-speed" ["fan2"] "fan" 10,
         Run Com "wifi" ["wlp3s0"] "wifi" 10,
         Run StdinReader
     ],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader% }{  [vol %vol%] %disku% [%multicpu%] [%memory%] [%thermal0%] [%fan%] [%wlp3s0wi%] [<fc=#FFFFCC>%date%</fc>]"
+    template = "%StdinReader% }{  [vol %vol%] %disku% [%multicpu%] [%memory%] [%thermal0%] [%thermal1%] [%thermal2%] [%pump%] [%fan%] [%wlp3s0wi%] [<fc=#FFFFCC>%date%</fc>]"
 }

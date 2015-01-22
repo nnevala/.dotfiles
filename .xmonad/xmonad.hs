@@ -26,7 +26,8 @@ import qualified Data.Map        as M
 -- certain contrib modules.
 --
 --myTerminal = "/usr/bin/gnome-terminal"
-myTerminal = "/usr/bin/xterm"
+-- myTerminal = "/usr/bin/xterm"
+myTerminal = "/usr/bin/terminator"
 
 
 ------------------------------------------------------------------------
@@ -51,7 +52,8 @@ myWorkspaces = ["1:comms","2:web","3:dev1","4:dev2","5:spotify","6:skype"] ++ ma
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "Chromium"       --> doShift "2:web"
+    [ title =?     "irc :"          --> doShift "1:comms"
+    , className =? "Chromium"       --> doShift "2:web"
     , className =? "Google-chrome"  --> doShift "2:web"
     , resource  =? "desktop_window" --> doIgnore
     , className =? "Galculator"     --> doFloat
@@ -257,8 +259,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- TODO: update this binding with avoidStruts, ((modMask, xK_b),
 
   -- Quit xmonad.
-  , ((modMask .|. shiftMask, xK_q),
-     io (exitWith ExitSuccess))
+  -- , ((modMask .|. shiftMask, xK_q),
+  --   io (exitWith ExitSuccess))
 
   -- Restart xmonad.
   , ((modMask, xK_q),

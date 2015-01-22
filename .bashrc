@@ -1,5 +1,5 @@
 # SSH
-eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+# eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
 # scripts
 export PATH=$PATH:~/bin:~/bin/xmobar-scripts
@@ -30,3 +30,14 @@ export PATH=$GOPATH/bin:$PATH
 
 # Some aliases
 alias cal="cal -m"
+alias ls="ls --color"
+alias ll="ls -la"
+alias addon-sdk="cd /opt/addon-sdk && source bin/activate; cd -"
+
+# Software
+export CHROME_BIN=/usr/bin/chromium
+export EDITOR=/usr/bin/vim
+
+eval "$(rbenv init -)"
+
+# PATH="$PATH:/home/niko/Downloads/flow/"
