@@ -42,3 +42,5 @@ Thumbs.db
 ####################
 .idea/*
 
+composer.phar
+*.sublime-workspace
